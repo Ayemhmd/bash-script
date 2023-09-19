@@ -1,0 +1,17 @@
+Given two integers, x and y , identify whether x<y or x>y  or x=y .
+*******************************************
+#!/bin/bash
+read -p "Enter the value of X: " x
+read -p "Enter the value of Y: " y
+
+# Calculate the difference between X and Y
+result=$((x - y))
+
+# Check the result and print the comparison
+if [ $result -gt 0 ]; then
+  echo "X is greater than Y"
+elif [ $result -lt 0 ]; then
+  echo "X is less than Y"
+else
+  echo "X is equal to Y"
+fi
