@@ -1,0 +1,18 @@
+Given two integers,  and , find their sum, difference, product, and quotient.
+**************************************
+#!/bin/bash
+
+#Read the user's x and y values.
+read -p "Enter the value of x: " x
+read -p "Enter the value of y: " y
+
+# Check if both x and y are within the range
+if [ "$x" -ge -100 ] && [ "$x" -le 100 ] && [ "$y" -ge -100 ] && [ "$y" -le 100 ]; then
+  
+   echo $((x+y))
+   echo $((x-y))
+   echo $((x*y))
+   echo $((x/y))
+else
+  echo "At least one of x or y is outside the -100 to 100 range."
+fi
